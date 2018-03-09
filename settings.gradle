@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':miao-core', ':miao-views', ':miao-business'
