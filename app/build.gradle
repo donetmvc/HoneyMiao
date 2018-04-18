@@ -26,10 +26,9 @@ dependencies {
     implementation project(':miao-core')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:26.1.0'
-
-
     implementation 'me.yokeyword:fragmentation:1.0.3'
     implementation 'me.yokeyword:fragmentation-swipeback:1.0.3'
+    implementation project(':miao-business')
 }
 repositories {
     mavenCentral()

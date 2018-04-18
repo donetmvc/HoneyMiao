@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.donetmvc.honey.miao.core.R
 import com.donetmvc.honey.miao.core.delegates.BaseFragmentDelegate
+import kotlinx.android.synthetic.main.activity_proxy.*
 import me.yokeyword.fragmentation.ExtraTransaction
 import me.yokeyword.fragmentation.ISupportActivity
 import me.yokeyword.fragmentation.SupportActivityDelegate
@@ -29,6 +30,7 @@ abstract class ProxyActivity: AppCompatActivity() , ISupportActivity {
 //        val container = ContentFrameLayout(this)
 //        container.id = R.id.delegate_container
         setContentView(R.layout.activity_proxy)
+
         if (savedInstanceState == null) {
             supportActivity.loadRootFragment(R.id.fragment_content, setRootFragment())
         }
