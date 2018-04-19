@@ -3,8 +3,7 @@ package com.donetmvc.honey.miao.core.activity
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.donetmvc.honey.miao.core.R
-import com.donetmvc.honey.miao.core.delegates.BaseFragmentDelegate
-import kotlinx.android.synthetic.main.activity_proxy.*
+import com.donetmvc.honey.miao.core.fragments.BaseFragment
 import me.yokeyword.fragmentation.ExtraTransaction
 import me.yokeyword.fragmentation.ISupportActivity
 import me.yokeyword.fragmentation.SupportActivityDelegate
@@ -17,7 +16,7 @@ abstract class ProxyActivity: AppCompatActivity() , ISupportActivity {
 
     private val supportActivity = SupportActivityDelegate(this)
 
-    abstract fun setRootFragment(): BaseFragmentDelegate?
+    abstract fun setRootFragment(): BaseFragment?
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

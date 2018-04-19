@@ -1,4 +1,4 @@
-package com.donetmvc.honey.miao.core.delegates
+package com.donetmvc.honey.miao.core.fragments
 
 import android.app.Activity
 import android.content.Context
@@ -16,7 +16,7 @@ import me.yokeyword.fragmentation.anim.FragmentAnimator
 /**
  * Created by liuwenbin on 18/3/31.
  */
-abstract class BaseFragmentDelegate: Fragment() , ISupportFragment {
+abstract class BaseFragment: Fragment() , ISupportFragment {
 
     abstract fun setContentFragment(): Any
 
@@ -38,9 +38,9 @@ abstract class BaseFragmentDelegate: Fragment() , ISupportFragment {
         supportFragment.onCreate(savedInstanceState)
     }
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val rootView = when {
-            setContentFragment() is Int -> inflater!!.inflate((setContentFragment() as Int), container, false)
+            setContentFragment() is Int -> inflater.inflate((setContentFragment() as Int), container, false)
             setContentFragment() is View -> setContentFragment() as View
             else -> throw ClassCastException("type of setContentLaoyout() must be int or View!")
         }

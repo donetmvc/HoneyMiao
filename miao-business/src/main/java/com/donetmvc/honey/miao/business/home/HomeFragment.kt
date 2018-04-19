@@ -5,9 +5,10 @@ import android.view.View
 import android.widget.Button
 import com.donetmvc.honey.miao.business.R
 import com.donetmvc.honey.miao.business.SetFragment
-import com.donetmvc.honey.miao.core.delegates.BaseFragmentDelegate
+import com.donetmvc.honey.miao.core.fragments.BaseFragment
+import com.donetmvc.honey.miao.core.fragments.PermissionFragment
 
-class HomeFragment: BaseFragmentDelegate() {
+class HomeFragment: PermissionFragment() {
 
     private lateinit var btn_go_detail: Button
     private lateinit var btn_go_set: Button

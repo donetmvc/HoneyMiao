@@ -4,11 +4,11 @@ apply plugin: 'kotlin-android-extensions'
 
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
     defaultConfig {
         applicationId "com.donetmvc.honey.miao"
         minSdkVersion 21
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -24,10 +24,10 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':miao-core')
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'me.yokeyword:fragmentation:1.0.3'
-    implementation 'me.yokeyword:fragmentation-swipeback:1.0.3'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$KOTLIN_VERSION"
+    implementation "com.android.support:appcompat-v7:$ANDROID_SUPPORT_VERSION"
+    implementation "me.yokeyword:fragmentation:$FRAGMENT_VERSION"
+    implementation "me.yokeyword:fragmentation-swipeback:$FRAGMENT_VERSION"
     implementation project(':miao-business')
 }
 repositories {

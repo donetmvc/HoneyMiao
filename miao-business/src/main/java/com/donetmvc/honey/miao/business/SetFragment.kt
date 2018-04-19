@@ -2,9 +2,9 @@ package com.donetmvc.honey.miao.business
 
 import android.os.Bundle
 import android.view.View
-import com.donetmvc.honey.miao.core.delegates.BaseFragmentDelegate
+import com.donetmvc.honey.miao.core.fragments.BaseFragment
 
-class SetFragment: BaseFragmentDelegate() {
+class SetFragment: BaseFragment() {
 
     override fun setContentFragment(): Any {
         return R.layout.fragment_set
