@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HoneyMiao.iml" filepath="$PROJECT_DIR$/HoneyMiao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/HoneyMiao.iml" filepath="$PROJECT_DIR$/.idea/HoneyMiao.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/miao-business/miao-business.iml" filepath="$PROJECT_DIR$/miao-business/miao-business.iml" />
       <module fileurl="file://$PROJECT_DIR$/miao-core/miao-core.iml" filepath="$PROJECT_DIR$/miao-core/miao-core.iml" />
