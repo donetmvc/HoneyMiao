@@ -49,11 +49,11 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:$OKHTTP_VERSION"
     implementation "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION"
     implementation "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION"
-    implementation("com.squareup.retrofit2:converter-simplexml:$RETROFIT_VERSION") {
-        exclude group: 'xpp3', module: 'xpp3'
-        exclude group: 'stax', module: 'stax-api'
-        exclude group: 'stax', module: 'stax'
-    }
+//    implementation("com.squareup.retrofit2:converter-simplexml:$RETROFIT_VERSION") {
+//        exclude group: 'xpp3', module: 'xpp3'
+//        exclude group: 'stax', module: 'stax-api'
+//        exclude group: 'stax', module: 'stax'
+//    }
 }
 repositories {
     mavenCentral()
